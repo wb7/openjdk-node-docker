@@ -5,13 +5,13 @@ MAINTAINER Lucas <lg@wb7.eu>
 RUN apt-get update && apt-get upgrade -y
 
 # install curl
-RUN apt-get install -y curl
+RUN apt-get install -y curl wget
 
 # add nodejs repo
 RUN curl -sL https://deb.nodesource.com/setup_8.x | bash -
 
 # install nodejs
-RUN apt-get install -y nodejs
+RUN apt-get install -y nodejs npm
 
 # maybe you need this for building something
 RUN apt-get install -y build-essential
