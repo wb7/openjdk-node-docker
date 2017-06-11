@@ -11,7 +11,7 @@ RUN apt-get install -y curl wget
 RUN curl -sL https://deb.nodesource.com/setup_8.x | bash -
 
 # install nodejs
-RUN apt-get install -y nodejs npm
+RUN apt-get install -y nodejs
 
 # maybe you need this for building something
 RUN apt-get install -y build-essential
