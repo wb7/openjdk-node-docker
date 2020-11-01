@@ -8,7 +8,7 @@ RUN apt-get update && apt-get upgrade -y
 RUN apt-get install -y curl wget
 
 # add nodejs repo
-RUN curl -sL https://deb.nodesource.com/setup_8.x | bash -
+RUN curl -sL https://deb.nodesource.com/setup_15.x | bash -
 
 # install nodejs
 RUN apt-get install -y nodejs
